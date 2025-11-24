@@ -13,6 +13,7 @@ const props = defineProps({
     <p class="mt-4 text-lg text-zinc-600 sm:text-xl" v-if="description">
       {{ description }}
     </p>
+    <a href="mailto:stevenw@voyagersoftwarecorp.com" class="mt-4 text-lg text-green-600 sm:text-xl hover:underline">stevenw@voyagersoftwarecorp.com</a>
     <div class="flex flex-wrap gap-4 mt-8">
       <div v-for="button of buttons">
         <NuxtLink v-if="button.label && button.url" :href="button.url"
