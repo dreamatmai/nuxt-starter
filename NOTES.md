@@ -31,6 +31,10 @@ Netlify Nuxt Starter template.
   https://voyagersoftwarecorp.com/voy/privacy by `pages/voy/privacy.vue` (not
   linked from the home page). Copied from podskip's
   `podskip/docs/voy-privacy-policy.md`; copy it over again when that changes.
+- `content/voy-terms-of-service.md` — the Voy app's Terms of Service, served at
+  https://voyagersoftwarecorp.com/voy/terms by `pages/voy/terms.vue`. Written
+  here (2026-10-31); this site's copy is the source. Both legal pages render
+  through `components/LegalDoc.vue`.
   New pages not linked from the home page must also be added to
   `nitro.prerender.routes` in `nuxt.config.ts`, or they 404 on Netlify.
 - `public/images/hero.jpg` — hero image (still the template's Nuxt artwork).
