@@ -27,6 +27,12 @@ Netlify Nuxt Starter template.
   `components/` but not used.
 - `components/Navbar.vue` (site name, menu links), `components/Footer.vue`
   (copyright line), `components/Cta.vue` (contact email link).
+- `content/voy-privacy-policy.md` — the Voy app's privacy policy, served at
+  https://voyagersoftwarecorp.com/voy/privacy by `pages/voy/privacy.vue` (not
+  linked from the home page). Copied from podskip's
+  `podskip/docs/voy-privacy-policy.md`; copy it over again when that changes.
+  New pages not linked from the home page must also be added to
+  `nitro.prerender.routes` in `nuxt.config.ts`, or they 404 on Netlify.
 - `public/images/hero.jpg` — hero image (still the template's Nuxt artwork).
 - Browser tab title and meta description still come from the template
   ("Nuxt Starter"), set in `app.vue`.
@@ -34,7 +40,7 @@ Netlify Nuxt Starter template.
 ## Working locally
 
 ```bash
-npm install        # `npm ci` currently fails: package-lock.json is out of sync
+npm ci
 npm run dev        # http://localhost:3000
 npm run generate   # same build Netlify runs
 ```
