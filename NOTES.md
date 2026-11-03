@@ -35,6 +35,8 @@ Netlify Nuxt Starter template.
   https://voyagersoftwarecorp.com/voy/terms by `pages/voy/terms.vue`. Written
   here (2026-10-31); this site's copy is the source. Both legal pages render
   through `components/LegalDoc.vue`.
+- `content/voy-support.md` — the Voy support page, served at
+  https://voyagersoftwarecorp.com/voy/support by `pages/voy/support.vue` (2026-11-02).
   New pages not linked from the home page must also be added to
   `nitro.prerender.routes` in `nuxt.config.ts`, or they 404 on Netlify.
 - `public/images/hero.jpg` — hero image (still the template's Nuxt artwork).
