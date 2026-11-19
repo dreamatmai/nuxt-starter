@@ -56,3 +56,6 @@ the `.netlify/` folder is git-ignored).
 
 Test changes on a branch or PR first — its deploy preview URL shows the result
 before anything touches production.
+- `public/voy/podcast-sources.csv` — the list of shows Voy plays, with each
+  show's public RSS feed and Apple Podcasts page, for App Review. Served as is at
+  https://voyagersoftwarecorp.com/voy/podcast-sources.csv (2026-11-19).
