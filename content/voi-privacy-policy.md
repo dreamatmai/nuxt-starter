@@ -32,7 +32,7 @@ Ad detection happens on your Mac. Our servers analyze each episode ahead of time
 - **No microphone.** Voi never listens to your surroundings. It only analyzes the episode audio it is already playing.
 - **Nothing uploaded.** No audio, fingerprint, or listening data goes from your Mac to us or to Shazam. Apple's ShazamKit is used only on your Mac, to match against the fingerprints the app downloaded.
 - **What our servers can see.** Requesting an episode's ad-skip data tells our servers which episode was requested, from what IP address, and when. To make playback start fast, the app also requests data for a show's three newest episodes when you open the show. These requests carry no account, user, or device identifier.
-- **Podcast hosts.** Episode audio and artwork come straight from the podcast's own host or its hosting provider, as in any podcast app. Those hosts see your IP address, a user agent naming the app and macOS version (for example `Voi/1.0.0 (Macintosh; macOS 26.1)`), and which episode you requested. Some hosts insert their own ads into the audio; their privacy policies apply to that.
+- **Podcast hosts.** Episode audio and artwork come straight from the podcast's own host or its hosting provider, as in any podcast app. Those hosts see your IP address, a user agent naming the app and macOS version (for example `Voi/1.0.0 (Macintosh; macOS 26.1)`), and which episode you requested. To make playback start fast, opening a show also starts downloading the audio of its newest unfinished episode from its host, before you press Play, so the host sees that request too. Some hosts insert their own ads into the audio; their privacy policies apply to that.
 
 ## Who receives information
 
@@ -40,7 +40,7 @@ We do not sell your personal information. The only parties that receive anything
 
 | Recipient | What they receive | Their policy |
 | --- | --- | --- |
-| Podcast hosts and their providers | Your IP address, user agent and the episode requested when you play it or view its artwork | The policy of each podcast or host |
+| Podcast hosts and their providers | Your IP address, user agent and the episode requested when you open a show (its artwork and the start of its newest unfinished episode), or play an episode | The policy of each podcast or host |
 | Amazon Web Services | Hosts our servers in the United States and delivers data through its CloudFront network; processes requests on our behalf | [AWS Privacy Notice](https://aws.amazon.com/privacy/) |
 
 You get Voi from Apple's Mac App Store; Apple handles the download under [Apple's Privacy Policy](https://www.apple.com/legal/privacy/). Voi itself sends Apple nothing about you.
