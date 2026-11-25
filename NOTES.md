@@ -65,3 +65,7 @@ before anything touches production.
   (2026-11-25). They use `layouts/voi.vue`, which has its own header and footer, so the pages do
   not name Voyager. This site's copies are the source; podskip's `podskip/docs/voi-privacy-policy.md`
   mirrors the policy.
+- `content/voi-support.md` — Voi's support page for App Review, served at
+  https://voyagersoftwarecorp.com/voi/support by `pages/voi/support.vue` on the `voi` layout; its
+  five screenshots are `public/voi/0*.jpg`, made from the store set of podskip's
+  `podskip/docs/assets/voi-mac-store-v1/` (2026-11-25, TeamApolloGitHub/podskip#785).

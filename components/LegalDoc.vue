@@ -22,6 +22,7 @@ const html = marked.parse(props.markdown, { breaks: true })
 .policy :deep(p) { @apply my-4 leading-relaxed; }
 .policy :deep(ul) { @apply list-disc pl-6 my-4 space-y-2; }
 .policy :deep(a) { @apply text-green-600 underline; }
+.policy :deep(img) { @apply w-full h-auto rounded-xl my-6; }
 .policy :deep(strong) { @apply text-zinc-800; }
 .policy :deep(table) { @apply block w-full overflow-x-auto my-6 text-sm border-collapse; }
 .policy :deep(th) { @apply text-left font-semibold text-zinc-800 bg-zinc-50 border border-zinc-200 px-3 py-2; }
