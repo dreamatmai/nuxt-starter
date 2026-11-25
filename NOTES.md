@@ -59,3 +59,9 @@ before anything touches production.
 - `public/voy/podcast-sources.csv` — the list of shows Voy plays, with each
   show's public RSS feed and Apple Podcasts page, for App Review. Served as is at
   https://voyagersoftwarecorp.com/voy/podcast-sources.csv (2026-11-19).
+- `content/voi-privacy-policy.md`, `content/voi-terms-of-service.md` — the legal pages of Voi, the
+  free Mac app published by Apollo Apps Inc (another developer account; it only shares this host),
+  served at https://voyagersoftwarecorp.com/voi/privacy and /voi/terms by `pages/voi/*.vue`
+  (2026-11-25). They use `layouts/voi.vue`, which has its own header and footer, so the pages do
+  not name Voyager. This site's copies are the source; podskip's `podskip/docs/voi-privacy-policy.md`
+  mirrors the policy.
